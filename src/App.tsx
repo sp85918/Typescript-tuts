@@ -39,7 +39,7 @@ function App() {
         <Status status='success' />
         <Children>I am here</Children>
         <OptionalProps name="Sachin" />
-        <Event handleClick={() => { console.log("clicked") }}/>
+        <Event handleClick={(event, id) => { console.log("clicked", event, id) }}/>
       </header>
     </div>
   );
